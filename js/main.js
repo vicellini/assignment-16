@@ -25,19 +25,20 @@ buttonEl.addEventListener('click', function(){
   var theTextInput = document.getElementById("the-text").value;
   titleTextInput.innerHTML = theTextInput;
   inputEl.style.display = 'none'
-  var counterVAl = 1500000
-  var intervalID = setInterval( function(){
-    counterVAl = counterVAl - 1000
-    if(counterVAl < 6000){
-      countdownEl.style.backgroundImage = "url(../images/images/tomato-green-silhouette.svg)";
+  var counterVal = 1500000;
+  var intervalID = setInterval(function(){
+    counterVal = counterVal - 1000
+    if(counterVal < 60000){
+      countdownEl.style.backgroundImage = "url(./images/images/tomato-green-silhouette.svg)";
     }
-    if(counterVAl < 0){
+    if(counterVal < 0){
       clearInterval(intervalID)
       clockEl.style.display = "none";
       completeEl.style.display = "block";
       titleTextInput.style.display = "none";
+      countdownEl.style.backgroundImage = "url(./images/images/tomato-red-silhouette.svg)";
     }
-    var timeNormal = convertTime(counterVAl)
+    var timeNormal = convertTime(counterVal)
     clockEl.innerHTML = "<h1 class='countdown__clock'>" + timeNormal + "</h1>";
   }, 1000)
 
