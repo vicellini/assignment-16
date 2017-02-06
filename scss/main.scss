@@ -1,0 +1,78 @@
+
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container {
+  font-family: "Helvetica", "sans-serif";
+}
+
+
+.countdown{
+  background-image: url(../images/images/tomato-red-silhouette.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 110px 0 150px;
+  border: none;
+  width: 800px;
+  text-align: center;
+}
+
+.countdown__clock{
+  font-size: 100px;
+  color: #F7CA18;
+  font-weight: 400;
+  text-shadow: 2px 2px 3px #333;
+  margin: 50px 0 0;
+}
+
+.countdown__complete{
+  display: none;
+  font-size: 60px;
+  font-weight: 800;
+  color: #C8F7C5;
+  text-shadow: 2px 2px 3px #333;
+}
+
+.countdown__user-input{
+  background-color: #FFB499;
+  width: 772px;
+  padding: 8px 0;
+  margin: 50px 0 0 16px;
+}
+
+.input-bar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.input-bar input{
+  width: 700px;
+  margin-left: 5px;
+  border: none;
+  border-bottom: 3px solid #555;
+  outline: none;
+  padding: 8px 0;
+  font-size: 18px;
+}
+
+.input-bar button {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100px;
+  background: #2574A9;
+  color: #fff;
+  margin-left: 0;
+  font-size: 18px;
+  position: relative;
+  left: -4px;
+  padding-bottom: 4px;
+}
